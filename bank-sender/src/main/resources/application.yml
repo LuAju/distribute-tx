@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dtx-txmsg-demo-bank1
+  profiles:
+    active: local
+
+
+custom:
+  mq:
+    tx:
+      producer:
+        group: bank_sender
+    destination: topic_send
+    key: accountChange
